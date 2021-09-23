@@ -46,7 +46,9 @@ const loadapi = () => {
                 <h3 class="card-text">${element.name}</h3>
                 <h6 class="card-text">${element.brand}</h6>
                 <p class="card-text">${element.description}</p>
-                <button type="button" class="btn btn-secondary">£${element.price}</button>
+                <button type="button" class="btn btn-primary">£${element.price}</button>
+                <button onclick="window.location.href ='backoffice.html?productId=${element._id}'" type="button" class="btn btn-success">Edit</button>
+                <button onclick="window.location.href ='detail.html?productId=${element._id}'" type="button" class="btn btn-secondary">details</button>
             </div>
             </div>`
             row.appendChild(col)
